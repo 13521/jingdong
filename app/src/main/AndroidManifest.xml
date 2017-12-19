@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bawei.guolei.jingdong">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Application.IApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/jdloag"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NoTheme">
+        <activity android:name=".jingdong.MainActivity" />
+        <activity android:name=".jingdong.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.EWMActivity" />
+        <activity android:name=".activity.SouSuoActivty" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.XqActivity" />
+        <activity android:name=".activity.RegisterActivity"></activity>
+    </application>
+
+</manifest>
